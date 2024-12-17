@@ -29,6 +29,7 @@ let nullValue = null
 
 let mySymbol = Symbol("mysymbol")
 
+console.log(mySymbol)
 // BigInt
 
 let myBigInt = BigInt(817239871289371986589716389471628379612983761289376129)
@@ -53,3 +54,32 @@ console.log(typeof mySymbol)
 
 console.log(typeof myBigInt)
 console.log(typeof myBigInt2)
+
+let myName = "Brais Moure";   // Comillas dobles
+let alias = 'MoureDev';       // Comillas simples
+let email = `braismoure@mouredev.com`; // Backticks
+console.log(typeof myName); // "string"
+
+
+let myName = "Brais Moure";  
+let mensaje = `Hola, mi nombre es ${myName}`;
+console.log(mensaje);
+
+let mensaje = `Hola, mi nombre es ${myName}`;
+console.log(mensaje);
+
+let age = 37; // Número entero
+let height = 1.77; // Número decimal
+console.log(typeof age); // "number"
+console.log(typeof height); // "number"
+
+let undefinedValue;
+console.log(undefinedValue); // undefined
+console.log(typeof undefinedValue); // "undefined"
+
+let nullValue = null;
+console.log(nullValue); // null
+console.log(typeof nullValue); // ⚠️ "object" (es un error histórico de JavaScript)
+
+let mySymbol = Symbol("mysymbol");
+console.log(typeof mySymbol); // "symbol"
