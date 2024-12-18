@@ -153,9 +153,91 @@ if (edad >= 18 && tieneLicencia) {
 
 // 6. Utiliza el operador lógico or
 
+let a = 10;
+let b = 5;
+let c = 0;
+
+// Ejemplo 1: Al menos una condición verdadera
+console.log("Ejemplo 1:", a > b || c > b); // true || false → true
+
+// Ejemplo 2: Todas las condiciones son falsas
+console.log("Ejemplo 2:", a < b || c > b); // false || false → false
+
+// Ejemplo 3: Todas las condiciones son verdaderas
+console.log("Ejemplo 3:", a > b || c < b); // true || true → true
+
+// Ejemplo 4: Uso con variables booleanas
+let tieneTrabajo = false;
+let tieneAhorros = true;
+
+console.log("Ejemplo 4:", tieneTrabajo || tieneAhorros); // false || true → true
+
+// Ejemplo 5: Comparación combinada
+console.log("Ejemplo 5:", a > b || (b + c) === 5 || c < a); // true || true || true → true
+
+
 // 7. Combina ambos operadores lógicos
 
+let a = 10;
+let b = 5;
+let c = 20;
+
+// Ejemplo 1: Sin paréntesis
+console.log("Ejemplo 1:", a > b && b > c || c > a); 
+// true && false || true → (false || true) → true
+
+// Ejemplo 2: Con paréntesis para cambiar la prioridad
+console.log("Ejemplo 2:", (a > b || b > c) && c > a); 
+// (true || false) && true → true && true → true
+
+// Ejemplo 3: Evaluación con variables booleanas
+let isAdult = true;
+let hasID = false;
+let isWithParent = true;
+
+console.log("Ejemplo 3:", isAdult && hasID || isWithParent); 
+// true && false || true → (false || true) → true
+
+// Ejemplo 4: Todas las condiciones deben cumplirse
+console.log("Ejemplo 4:", (isAdult && hasID) || (isAdult && isWithParent)); 
+// (true && false) || (true && true) → false || true → true
+
+// Ejemplo 5: Caso complejo con varias condiciones
+console.log("Ejemplo 5:", (a > b && b < c) || (c === 20 && a < b)); 
+// (true && true) || (true && false) → true || false → true
+
+
 // 8. Añade alguna negación
+
+// Ejemplo 1: Negación de valores booleanos
+console.log("Ejemplo 1:", !true);  // false
+console.log("Ejemplo 1:", !false); // true
+
+// Ejemplo 2: Negación con valores no booleanos
+console.log("Ejemplo 2:", !0);     // true (0 es un valor "falsy")
+console.log("Ejemplo 2:", !1);     // false (1 es un valor "truthy")
+console.log("Ejemplo 2:", !"");    // true (cadena vacía es "falsy")
+console.log("Ejemplo 2:", !"Hola"); // false (cadena no vacía es "truthy")
+
+// Ejemplo 3: Doble negación (convertir a booleano explícito)
+console.log("Ejemplo 3:", !!0);     // false (0 convertido a booleano)
+console.log("Ejemplo 3:", !!1);     // true (1 convertido a booleano)
+console.log("Ejemplo 3:", !!"");    // false (cadena vacía)
+console.log("Ejemplo 3:", !!"Hola"); // true (cadena no vacía)
+
+// Ejemplo 4: Uso en condiciones
+let isOnline = false;
+console.log("Ejemplo 4:", !isOnline ? "El usuario está desconectado" : "El usuario está en línea");
+
+let isOnline = true;
+console.log("Ejemplo 4.2:", !isOnline ? "El usuario está desconectado" : "El usuario está en línea");
+
+// Resultado: "El usuario está desconectado"
+
+// Ejemplo 5: Negación combinada con otros operadores
+let edad = 17;
+console.log("Ejemplo 5:", !(edad >= 18)); // true (porque 17 no es mayor o igual a 18)
+
 
 // 9. Utiliza el operador ternario
 
