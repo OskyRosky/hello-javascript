@@ -68,3 +68,30 @@ switch (day) {
 }
 
 console.log(dayName)
+
+
+
+//---------
+
+let age = 18;
+let day = 5;
+
+// Combinando if, else y switch
+if (age < 18) {
+    console.log("Es menor de edad");
+} else if (age >= 18 && age < 30) {
+    console.log("Es un adulto joven");
+} else {
+    console.log("Es un adulto");
+}
+
+switch (day) {
+    case 0:
+        console.log("Hoy es Lunes");
+        break;
+    case 5:
+        console.log("Hoy es Sábado");
+        break;
+    default:
+        console.log("Es un día entre semana o Domingo");
+}
