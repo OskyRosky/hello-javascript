@@ -241,4 +241,43 @@ console.log("Ejemplo 5:", !(edad >= 18)); // true (porque 17 no es mayor o igual
 
 // 9. Utiliza el operador ternario
 
+// Ejemplo 1: Verificar si un número es par o impar
+
+let numero = 13;
+let resultado = numero % 2 === 0 ? "Es par" : "Es impar";
+console.log("Ejemplo 1:", resultado);
+
+// Ejemplo 2: Verificar si una persona es mayor de edad
+
+let edad = 17;
+let esMayorDeEdad = edad >= 18 ? "Es mayor de edad" : "Es menor de edad";
+console.log("Ejemplo 2:", esMayorDeEdad);
+
+// Ejemplo 3: Mensaje basado en el estado de un usuario
+
+let isOnline = true;
+let estadoUsuario = isOnline ? "El usuario está en línea" : "El usuario está desconectado";
+console.log("Ejemplo 3:", estadoUsuario);
+
+//  Ejemplo 4: Usar ternario anidado
+
+let calificacion = 55;
+let resultadoCalificacion = calificacion >= 90
+  ? "Excelente"
+  : calificacion >= 70
+    ? "Aprobado"
+    : "Reprobado";
+console.log("Ejemplo 4:", resultadoCalificacion);
+// Resultado: Aprobado
+
+
+// Ejemplo 5: Usar ternario con una operación matemática
+
+let a = 10;
+let b = 20;
+let mayor = a > b ? a : b;
+console.log("Ejemplo 5: El número mayor es", mayor);
+// Resultado: El número mayor es 20
+
+
 // 10. Combina operadores aritméticos, de comparáción y lógicas
