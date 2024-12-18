@@ -55,7 +55,7 @@ console.log("Symbol:", mySymbol, typeof mySymbol);
 console.log("BigInt:", myBigInt, typeof myBigInt);
 
 
-// Mostramos los valores y tipos en la consola
+// 5. Mostramos los valores y tipos en la consola
 console.log("String:", myString, typeof myString);
 console.log("Number (entero):", myNumber, typeof myNumber);
 console.log("Number (decimal):", myDecimal, typeof myDecimal);
